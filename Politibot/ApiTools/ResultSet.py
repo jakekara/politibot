@@ -16,7 +16,7 @@ class ResultSet:
 
     # merge with another ResultSet
     def merge(self, other_set):
-        self.arr += other_set.results()
+        self.arr += other_set.arr
     
     def __init__(self, arr=[]):
         self.arr = arr

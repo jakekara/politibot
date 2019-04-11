@@ -52,8 +52,6 @@ class Fec:
 
             p = FecPagination(current_page.page(0)["pagination"])
             
-            print "Here's the pagination: " + str(p)
-
             # if p.pages > self.max_pages:
             #     raise Exception("Error: Too many results. Try narrowing your query")
 

@@ -7,6 +7,7 @@ conn = Congress(env.PROP_KEY)
 ct_delegation = conn.delegation("CT")
 
 print json.dumps(ct_delegation.results(), indent=2)
+
 json_normalize(ct_delegation.results()).to_csv("ct-delegation.csv")
 
 def bill_report(member):

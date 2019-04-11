@@ -42,7 +42,7 @@ class CampaignFinance(ProPublicaApi):
         return self.get(method)
     
 
-    def __init__(self, key, version="v1", cycle="2016", max_pages=1):
+    def __init__(self, key, version="v1", cycle="2018", max_pages=1):
 
         # Max number of pages to get
         # self.max_pages = max_pages

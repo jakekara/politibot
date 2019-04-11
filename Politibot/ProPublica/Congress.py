@@ -39,3 +39,9 @@ class Congress(ProPublicaApi):
         assert(len(ret.results()) < 2)
 
         return ret
+
+    def member(self, member_id):
+
+        method = "members" + str(member_id) + ".json"
+
+        return self.get(method)
